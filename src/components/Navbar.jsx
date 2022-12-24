@@ -5,21 +5,19 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 const Navbar = () => {
   
   return (
-    <div>
-      <nav>
-        <a href="mailto:nickbloo2@gmail.com" target="_blank">
-          <MdOutlineMail />
+      <nav className='flex flex-col items-end pr-2 text-white'>
+        <a className='hover:text-slate-200' href="mailto:nickbloo2@gmail.com" target="_blank">
+          <MdOutlineMail size={60}/>
         </a>
 
-        <a href="https://www.linkedin.com/in/nick-c-hargrove/" target="_blank">
-          <FaLinkedin />
+        <a className='hover:text-slate-200' href="https://www.linkedin.com/in/nick-c-hargrove/" target="_blank">
+          <FaLinkedin size={60}/>
         </a>
 
-        <a href="https://www.github.com/nickbloo" target="_blank">
-          <FaGithubSquare />
+        <a className='hover:text-slate-200' href="https://www.github.com/nickbloo" target="_blank">
+          <FaGithubSquare size={60}/>
         </a>
       </nav>
-    </div>
   )
 }
 

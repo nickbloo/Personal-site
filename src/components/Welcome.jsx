@@ -3,8 +3,9 @@ import React from 'react';
 const Welcome = () => {
   
   return (
-    <div className='pl-3 pt-14 h-screen'>
-      <h1>Welcome to page</h1>
+    <div className='flex flex-col justify-center items-center pl-3 pt-14 h-screen text-white'>
+      <h1 className='text-7xl font-bold'>Aya (Hello)</h1>
+      <h2 className='text-6xl font-semibold'>I'm Nick</h2>
     </div>
   )
 }
