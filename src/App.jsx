@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Welcome from './components/Welcome';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <div className="bg-blue-600">
-      <h1>Hello</h1>
+      <Navbar />
+      <Welcome />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   )
 }
