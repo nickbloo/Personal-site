@@ -1,4 +1,5 @@
-import React from 'react';
+import {useRef, useEffect} from 'react';
+import { InView } from 'react-intersection-observer';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import About from './components/About';
