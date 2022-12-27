@@ -10,10 +10,18 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-.gradient {
+#root {
     background: linear-gradient(90deg, rgba(89,0,203,1) 10%, rgba(121,37,162,1) 100%);
     background-size: 400% 400%;
     animation: animate 15s ease infinite;
+}
+
+.background {
+    background-image: url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png");
+    background-repeat: no-repeat;
+    background-position-x: -45rem, 55rem, -40rem, 55rem;
+    background-position-y: -30%, 35%, 80%, 130%;
+    background-size: 100%, 90%, 80%, 100%;
 }
 
 @keyframes animate {
@@ -26,4 +34,22 @@ html, body {
     100%{
         background-position: 0 50%;
     }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; 
+    border-top: 10px solid white;
+    margin: 20%;
+}
+
+.active-triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 10px solid white;
+    margin: -30%;
 }
