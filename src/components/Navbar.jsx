@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 const Navbar = () => {
   
   return (
-      <nav className='flex flex-col items-end pr-2 text-white'>
+      <nav className='flex flex-col items-end pr-2 text-white' id="navbar">
         <a className='hover:text-slate-200' href="mailto:nickbloo2@gmail.com" target="_blank">
           <MdOutlineMail size={60}/>
         </a>

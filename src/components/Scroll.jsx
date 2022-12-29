@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll'
 
-const Scroll = () => {
+const Scroll = ({welcomeVisible, aboutVisible, portfolioVisible, contactVisible}) => {
 
   const [isActive, setActive] = useState(false);
 
@@ -11,10 +11,18 @@ const Scroll = () => {
   
   return (
     <nav className='flex z-1 flex-col items-end fixed inset-y-1/2 right-0 pr-8'>
-        <Link to="welcome" spy={true} smooth={true} offset={50} duration={500}><div className='active-triangle'></div></Link>
-        <Link to="about" spy={true} smooth={true} offset={50} duration={500}><div className='triangle'></div></Link>
-        <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}><div className='triangle'></div></Link>
-        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}><div className='triangle'></div></Link>
+        <Link to="navbar" spy={true} smooth={true} offset={50} duration={500}>
+          <div className={welcomeVisible ? 'triangle' : 'square'}></div>
+        </Link>
+        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+          <div className={aboutVisible ? 'triangle' : 'square'}></div>
+        </Link>
+        <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}>
+          <div className={portfolioVisible ? 'triangle' : 'square'}></div>
+        </Link>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          <div className={contactVisible ? 'triangle' : 'square'}></div>
+        </Link>
     </nav>
   )
 }
