@@ -16,7 +16,7 @@ html, body {
     animation: animate 15s ease infinite;
 }
 
-.background {
+#background {
     background-image: url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png");
     background-repeat: no-repeat;
     background-position-x: -45rem, 55rem, -40rem, 55rem;
@@ -34,28 +34,4 @@ html, body {
     100%{
         background-position: 0 50%;
     }
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right: 10px solid white;
-    margin: 30%;
-}
-
-.triangle:hover {
-    border-right: 10px solid rgb(201, 212, 222);
-}
-
-.square {
-    border: 1px solid white;
-    width: 15px;
-    height: 15px;
-    margin: 30%;
-}
-
-.square:hover {
-    border: 3px solid rgb(201, 212, 222);
 }

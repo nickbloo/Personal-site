@@ -9,7 +9,7 @@ import { SiExpress } from "react-icons/si";
 const Portfolio = () => {
   
   return (
-    <div className='flex flex-wrap flex-col justify-center items-center pl-3 pt-14 h-screen text-white' id="portfolio">
+    <div className='flex flex-wrap flex-col justify-center items-center pl-3 pt-14 text-white' id="portfolio">
       <h1 className='text-5xl font-semibold'>Portfolio</h1>
 
       <div className='flex flex-row gap-x-48 mt-2'>

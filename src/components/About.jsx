@@ -4,7 +4,7 @@ import me from '../assets/me.png'
 const About = () => {
   
   return (
-    <div className='flex flex-wrap flex-row justify-center items-center pl-3 pt-14 h-screen text-white' id="about">
+    <div className='flex flex-wrap flex-row justify-center items-center pl-3 pt-14 text-white' id="about">
       <img className='rounded-full' src={me} alt="pic-of-me"/>
       <div className='pl-3'>
         <div className='flex text-3xl font-bold'>I am a software developer from Oklahoma.</div> 
