@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import * as Scroll from 'react-scroll';
 
 export const CarouselItem = ({ children, height }) => {
     return (
-        <div className="inline-flex items-center justify-center h-screen bg-green-500 text-white" style={{ height: height }}>
+        <div className="inline-flex items-center justify-center h-screen text-white" style={{ height: height }}>
             {children}
         </div>
     )
@@ -36,11 +37,10 @@ const Carousel = ({ children }) => {
             <div className="flex z-1 flex-col items-end fixed inset-y-1/2 right-0 pr-8">
                 {React.Children.map(children, (child, idx) => {
                     return (
-                        <button className={`${idx === activeIndex ? "rounded-full bg-green-500" : "rounded-full"}`}
+                        <button className={`${idx === activeIndex ? "m-1 rounded-full border-8 border-white" : "m-1 rounded-full border-8 border-violet-600"}`}
                         onClick={() => {
                             updateIndex(idx);
                         }}>
-                            {idx + 1}
                         </button>
                     );
                 })}
