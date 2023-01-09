@@ -12,17 +12,17 @@ html, body {
 
 #root {
     background: linear-gradient(90deg, rgba(89,0,203,1) 10%, rgba(121,37,162,1) 100%);
-    background-size: 400% 400%;
+    background-size: 100% auto;
     animation: animate 15s ease infinite;
 }
 
-#background {
+/* #background {
     background-image: url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png"), url("assets/circle.png");
     background-repeat: no-repeat;
     background-position-x: -45rem, 55rem, -40rem, 55rem;
     background-position-y: -30%, 35%, 80%, 130%;
     background-size: 100%, 90%, 80%, 100%;
-}
+} */
 
 @keyframes animate {
     0%{

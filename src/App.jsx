@@ -11,15 +11,12 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-
       <Carousel>
         <Welcome />
         <About />
         <Portfolio />
         <Contact />
       </Carousel>
-      <Footer />
     </div>
   )
 }
