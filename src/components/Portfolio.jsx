@@ -51,7 +51,7 @@ const Portfolio = () => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="html" height={50} width={50}/>
           </span>
           <a href="https://github.com/nickbloo/Project-3-Arcade-Game" target="_blank">
-            <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold md:p-6 pl-1 pt-1 md:shadow-2xl border border-gray-400 rounded shadow'>View on github</button>
+            <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold md:py-2 py-1 md:px-4 px-2 text-sm border border-gray-400 rounded shadow'>View on github</button>
           </a>
         </div>
 
